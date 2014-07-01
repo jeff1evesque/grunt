@@ -1,3 +1,6 @@
 [submodule "node_modules/grunt"]
 	path = node_modules/grunt
 	url = git://github.com/gruntjs/grunt.git
+[submodule "node_modules/grunt-cli"]
+	path = node_modules/grunt-cli
+	url = git://github.com/gruntjs/grunt-cli.git
