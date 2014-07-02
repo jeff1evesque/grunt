@@ -34,3 +34,22 @@ sudo gem install sass
 # node.js
 sudo apt-get install nodejs
 ```
+
+###Configuration
+
+####Local Ignore Rules
+
+We do not want to commit files, or direcotires within our git *submodules*.  For this reason, we need to add git *local ignore rules*.  This is done by changing into the direcotry of the submodule, and editing the following file:
+
+```
+cd /var/www/pocketsphinx/[YOUR_SUBMODULE]
+pico .git/info/exclude
+```
+
+Then, add the following, and save the file:
+
+```
+*
+```
+
+**Note:** each repository (or submodule) has it's own `.git/info/exclude` file.
