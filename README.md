@@ -1,7 +1,7 @@
 Grunt
 =====
 
-This repository contains all the prerequisites properly configured to automate tools such as *Sass*, or *Uglify* using the command line interface (terminal console).  Additional tools (plug-ins) can be automated, However, check the list of available plugins within the *Grunt Ecosystem*.
+This repository contains all the prerequisites properly configured to automate tools such as *Sass*, or *Uglify* using the command line interface (terminal console).  Additional tools (plug-ins) can be automated.  However, check the list of available plugins within the *Grunt Ecosystem*.
 
 ##Grunt
 
