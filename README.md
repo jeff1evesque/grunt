@@ -7,9 +7,9 @@ This repository contains all the prerequisites properly configured to automate t
 
 ###Definition
 
-*Grunt* is an *automation tool* which assits in varous repetitive tasks like minification, compilation, unit testing, linting ,etc.
+*Grunt* is an *automation tool* which assists in various repetitive tasks such as minification, compilation, unit testing, linting, etc.
 
-Grunt works by adapting plugins, and automating them.  Some of the more notable plugins which can be assimilated into the Grunt ecosystem include:
+Grunt works by adapting plugins, and automating them.  Some of the more notable plug-ins included in the *Grunt Ecosystem*:
 
 - Sass (compiled css)
 - Uglify (minify js)
