@@ -18,3 +18,19 @@ Grunt works by adapting plugins, and automating them.  Some of the more notable 
 For a complete list of available plugins to the *Grunt* ecosystem:
 
 - http://gruntjs.com/plugins
+
+## Requirement
+
+###Installation
+
+The following packages need to be installed through terminal in Ubuntu:
+
+```
+# Sass (ruby)
+sudo apt-get install rubygems1.8
+sudo apt-get install libhaml-ruby1.8
+sudo gem install sass
+
+# node.js
+sudo apt-get install nodejs
+```
