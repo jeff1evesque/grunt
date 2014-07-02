@@ -39,7 +39,7 @@ sudo apt-get install nodejs
 
 ####Local Ignore Rules
 
-We do not want to commit files, or direcotires within our git *submodules*.  For this reason, we need to add git *local ignore rules*.  This is done by changing into the direcotry of the submodule, and editing the following file:
+We do not want to commit files, or directories within our git *submodules*.  For this reason, we need to add git *local ignore rules*.  This is done by changing into the directory of the submodule, and editing the following file:
 
 ```
 cd /var/www/pocketsphinx/[YOUR_SUBMODULE]
