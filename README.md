@@ -21,7 +21,7 @@ For a complete list of available plugins to the *Grunt* ecosystem:
 
 ## Requirement
 
-###Installation
+###Pre-Installation
 
 The following packages need to be installed through terminal in Ubuntu:
 
