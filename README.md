@@ -53,3 +53,19 @@ Then, add the following, and save the file:
 ```
 
 **Note:** each repository (or submodule) has it's own `.git/info/exclude` file.
+
+###Installation
+
+We need to install each of the grunt submodules (plug-ins):
+
+```
+cd /var/www/grunt/node_modules/[SUBMODULE]
+npm install --production
+```
+
+We may need to rebuild our *Grunt* packages:
+
+```
+cd /var/www/grunt
+npm rebuild
+```
