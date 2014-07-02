@@ -57,6 +57,21 @@ Then, add the following, and save the file:
 
 **Note:** each repository (or submodule) has it's own `.git/info/exclude` file.
 
+####Grunt Submodules
+
+Before proceeding to the the *Installation* subsection, we need to ensure that each *Grunt* submodule (plug-in) is referring to the most recent release version:
+
+```
+cd /var/www/grunt/node_modules/grunt
+git checkout v[RELEASE_NUMBER]
+cd ..
+git status
+```
+
+**Note:** the most recent release for each *grunt* submodule (plug-in) can be obtained by visiting https://github.com/gruntjs/[GRUNT_PLUGIN]/releases, where we may substitute *grunt-contrib-sass* in place of `GRUNT_PLUGIN` to obtain the most recent version for the *grunt-contrib-sass* submodule.
+
+After checking-out the most recent releases for each submodule (plug-in), we commit, and merge the changes.
+
 ###Installation
 
 We need to install each of the grunt submodules (plug-ins):
