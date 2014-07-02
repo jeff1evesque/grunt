@@ -68,9 +68,14 @@ cd ..
 git status
 ```
 
-**Note:** the most recent release for each *grunt* submodule (plug-in) can be obtained by visiting https://github.com/gruntjs/[GRUNT_PLUGIN]/releases, where we may substitute *grunt-contrib-sass* in place of `GRUNT_PLUGIN` to obtain the most recent version for the *grunt-contrib-sass* submodule.
-
 After checking-out the most recent releases for each submodule (plug-in), we commit, and merge the changes.
+
+**Note:** the most recent release for each *grunt* submodule (plug-in):
+
+- https://github.com/gruntjs/grunt/releases
+- https://github.com/gruntjs/grunt-cli/releases
+- https://github.com/gruntjs/grunt-contrib-sass/releases
+- https://github.com/gruntjs/grunt-contrib-uglify/releases
 
 ###Installation
 
