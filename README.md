@@ -140,7 +140,7 @@ npm rebuild
 
 ###Configuration
 
-Grunt is only installed once within a given system, or web-server (depending on setup).  Each web-application within the given system (or server) requiring any aspect of *grunt* automation, will require its own `gruntfile.js`.  If this file is properly configured, *grunt* automation will happen naturally.
+Grunt is only installed once within a given system, or web-server (depending on setup).  Each web-application within the given system (or server) requiring any aspect of *grunt* automation, will need its own `gruntfile.js`.  If this file is properly configured, *grunt* automation will happen naturally.
 
 ####Grunt File
 
