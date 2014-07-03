@@ -23,6 +23,8 @@ For a complete list of available plugins to the *Grunt* ecosystem:
 
 ###Pre-Installation
 
+####Packages
+
 The following packages need to be installed through terminal in Ubuntu:
 
 ```
@@ -42,8 +44,6 @@ sudo make install
 cd ..
 sudo rm -R node-v0.10.23
 ```
-
-###Configuration
 
 ####GIT
 
@@ -137,3 +137,5 @@ We may need to rebuild our *Grunt* packages:
 cd /var/grunt
 npm rebuild
 ```
+
+###Configuration
