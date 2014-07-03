@@ -1,15 +1,21 @@
+# ignore = dirty, allows us to ignore any changes made within the specified submodule
+
 [submodule "node_modules/grunt"]
 	path = node_modules/grunt
 	url = git://github.com/gruntjs/grunt.git
+        ignore = dirty
 [submodule "node_modules/grunt-cli"]
 	path = node_modules/grunt-cli
 	url = git://github.com/gruntjs/grunt-cli.git
+        ignore = dirty
 [submodule "node_modules/grunt-contrib-uglify"]
 	path = node_modules/grunt-contrib-uglify
 	url = git://github.com/gruntjs/grunt-contrib-uglify.git
+        ignore = dirty
 [submodule "node_modules/grunt-contrib-sass"]
 	path = node_modules/grunt-contrib-sass
 	url = git://github.com/gruntjs/grunt-contrib-sass.git
+        ignore = dirty
 [submodule "node_modules/grunt-modernizr"]
 	path = node_modules/grunt-modernizr
 	url = git://github.com/Modernizr/grunt-modernizr.git
