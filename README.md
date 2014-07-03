@@ -43,7 +43,7 @@ cd ..
 sudo rm -R node-v0.10.23
 ```
 
-**Note: [Grunt requires](http://gruntjs.com/getting-started) stable Node.js [versions](http://nodejs.org/dist/) >= 0.8.0.
+**Note:** We are running [Grunt v0.4x](http://gruntjs.com/getting-started), which requires stable Node.js [versions](http://nodejs.org/dist/) >= 0.8.0.
 
 ###Configuration
 
