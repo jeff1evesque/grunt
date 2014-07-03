@@ -33,6 +33,9 @@ sudo gem install sass
 
 # node.js
 sudo apt-get install nodejs
+
+# npm
+sudo apt-get install mricron
 ```
 
 ###Configuration
