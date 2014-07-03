@@ -46,6 +46,48 @@ sudo rm -R node-v0.10.23
 
 ###Configuration
 
+####GIT
+
+For this project into your GitHub account, then clone your repository of this project:
+
+```
+cd /var
+sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
+```
+
+**Note:** There will only be one instance of grunt within each system (or web-server, depending on setup).  However, any web-application requiring any aspect of the *grunt* automation will require its own `gruntfile.js`.  If this file is properly configured, then *grunt* automation will happen naturally.
+
+Then, add the *Remote Upstream*, this way we can pull any merged pull-requests:
+
+```
+cd /var/grunt
+git remote add upstream https://github.com/[YOUR-USERNAME]/[REPOSITORY-NAME].git
+```
+
+#####GIT Submodule
+
+We need to initialize our git *submodules*:
+
+```
+sudo git submodule init
+sudo git submodule update
+```
+
+The above two commands will update submodules.  If they are already initialized, then the latter command will suffice.  Then, we need to pull the code-base into the initialized submodule directory:
+
+```
+cd /var/grunt
+git checkout -b NEW-BRANCH master
+cd [YOUR-SUBMODULE
+git checkout master
+git pull
+cd ..
+git status
+```
+
+Now, commit and merge the submodule changes.
+
+
 ####Local Ignore Rules
 
 We do not want to commit files, or directories within our git *submodules*.  For this reason, we need to add git *local ignore rules*.  This is done by changing into the directory of the submodule, and editing the following file:
