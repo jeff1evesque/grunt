@@ -13,3 +13,4 @@
 [submodule "node_modules/grunt-modernizr"]
 	path = node_modules/grunt-modernizr
 	url = git://github.com/Modernizr/grunt-modernizr.git
+        ignore = dirty
