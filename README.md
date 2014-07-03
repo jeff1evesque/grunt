@@ -75,7 +75,7 @@ The above two commands will update submodules.  If they are already initialized,
 ```
 cd /var/grunt
 git checkout -b NEW-BRANCH master
-cd [YOUR-SUBMODULE
+cd [YOUR-SUBMODULE]
 git checkout master
 git pull
 cd ..
@@ -90,7 +90,7 @@ Now, commit and merge the submodule changes.
 We do not want to commit files, or directories within our git *submodules*.  For this reason, we need to add git *local ignore rules*.  This is done by changing into the directory of the submodule, and editing the following file:
 
 ```
-cd /var/www/pocketsphinx/[YOUR_SUBMODULE]
+cd /var/grunt/[YOUR_SUBMODULE]
 pico .git/info/exclude
 ```
 
@@ -107,7 +107,7 @@ Then, add the following, and save the file:
 Before proceeding to the the *Installation* subsection, we need to ensure that each *Grunt* submodule (plug-in) is referring to the most recent release version:
 
 ```
-cd /var/www/grunt/node_modules/grunt
+cd /var/grunt/node_modules/grunt
 git checkout v[RELEASE_NUMBER]
 cd ..
 git status
@@ -127,13 +127,13 @@ After checking-out the most recent releases for each submodule (plug-in), we com
 We need to install each of the grunt submodules (plug-ins):
 
 ```
-cd /var/www/grunt/node_modules/[SUBMODULE]
+cd /var/grunt/node_modules/[SUBMODULE]
 npm install --production
 ```
 
 We may need to rebuild our *Grunt* packages:
 
 ```
-cd /var/www/grunt
+cd /var/grunt
 npm rebuild
 ```
