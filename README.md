@@ -55,8 +55,6 @@ cd /var
 sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 ```
 
-**Note:** There will only be one instance of grunt within each system (or web-server, depending on setup).  However, any web-application requiring any aspect of the *grunt* automation will require its own `gruntfile.js`.  If this file is properly configured, then *grunt* automation will happen naturally.
-
 Then, add the *Remote Upstream*, this way we can pull any merged pull-requests:
 
 ```
