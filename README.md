@@ -1,7 +1,7 @@
 Grunt
 =====
 
-This repository contains all the prerequisites properly configured to automate tools such as *Sass*, or *Uglify* using the command line interface (terminal console).  Additional tools (plug-ins) can be automated.  However, check the list of available plugins within the *Grunt Ecosystem*.
+This repository contains the correct submodules (plug-ins) to automate tools such as *Sass*, *Uglify*, *Modernizr* using the command line interface (terminal console) for Grunt v0.4.x.  Additional tools (plug-ins) can be automated.  However, check the list of available plugins within the *Grunt Ecosystem*.
 
 ##Grunt
 
@@ -33,10 +33,10 @@ sudo apt-get install rubygems1.8
 sudo apt-get install libhaml-ruby1.8
 sudo gem install sass
 
-# node.js, 10.28 - Ubuntu 14.04+
+# node.js, v0.10.28 - Ubuntu 14.04
 sudo apt-get install nodejs
 
-# node.js, 10.23 - Ubuntu 13.04-
+# node.js, v0.10.23 - Ubuntu 13.04-
 sudo wget http://node.js.org/dist/v0.10.23/node-v0.10.23.tar.gz -O - | tar -xz
 cd node-v0.10.23
 ./configure
@@ -84,31 +84,13 @@ git status
 
 Now, commit and merge the submodule changes.
 
-
-####Local Ignore Rules
-
-We do not want to commit files, or directories within our git *submodules*.  For this reason, we need to add git *local ignore rules*.  This is done by changing into the directory of the submodule, and editing the following file:
-
-```
-cd /var/grunt/[YOUR_SUBMODULE]
-pico .git/info/exclude
-```
-
-Then, add the following, and save the file:
-
-```
-*
-```
-
-**Note:** each repository (or submodule) has it's own `.git/info/exclude` file.
-
 ####Grunt Submodules
 
 Before proceeding to the the *Installation* subsection, we need to ensure that each *Grunt* submodule (plug-in) is referring to the most recent release version:
 
 ```
 cd /var/grunt/node_modules/grunt
-git checkout v[RELEASE_NUMBER]
+git checkout [RELEASE_TAG]
 cd ..
 git status
 ```
@@ -121,6 +103,7 @@ After checking-out the most recent releases for each submodule (plug-in), we com
 - https://github.com/gruntjs/grunt-cli/releases
 - https://github.com/gruntjs/grunt-contrib-sass/releases
 - https://github.com/gruntjs/grunt-contrib-uglify/releases
+- https://github.com/Modernizr/grunt-modernizr/releases
 
 ###Installation
 
