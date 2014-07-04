@@ -59,7 +59,7 @@ cd /var/[CLONE-DESTINATION]/grunt
 pico .gitmodules
 ```
 
-This will allow us to write / download necessary components into each submodule with the respective attribute commented-out.
+This will allow us to write / download necessary components into each respective submodule.
 
 #####GIT Submodule
 
