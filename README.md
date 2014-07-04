@@ -1,23 +1,19 @@
 Grunt
 =====
 
-This repository contains the correct submodules (plug-ins) to automate tools such as *Sass*, *Uglify*, *Modernizr* using the command line interface (terminal console) for Grunt v0.4.x.  Additional tools (plug-ins) can be automated.  However, check the list of available plugins within the *Grunt Ecosystem*.
+This repository contains the required submodules (plug-ins) to automate [grunt v0.4.5](http://gruntjs.com) tools such as [Sass](https://github.com/gruntjs/grunt-contrib-sass), [Uglify](https://github.com/gruntjs/grunt-contrib-uglify), [Modernizr](https://github.com/Modernizr/grunt-modernizr) using the command line interface (terminal console).  Additional tools (plug-ins) can be automated.  However, check the list of [available plugins](http://gruntjs.com/plugins) within the *Grunt Ecosystem*.
 
 ##Grunt
 
 ###Definition
 
-*Grunt* is an *automation tool* which assists in various repetitive tasks such as minification, compilation, unit testing, linting, etc.
+[*Grunt*](http://gruntjs.com) is an *automation tool* which assists in various repetitive tasks such as minification, compilation, unit testing, linting, etc.  Web-applications employing grunt is generally considered as a *testing*, or *staging* environment.  The compiled assets from this environment is typically pushed onto a *staging*, or *production* environments.
 
 Grunt works by adapting plugins, and automating them.  Some of the more notable plug-ins included in the *Grunt Ecosystem*:
 
 - Sass (compiled css)
 - Uglify (minify js)
 - Modernizr (conditional js / css)
-
-For a complete list of available plugins to the *Grunt* ecosystem:
-
-- http://gruntjs.com/plugins
 
 ## Requirement
 
@@ -47,12 +43,14 @@ sudo rm -R node-v0.10.23
 
 ####GIT
 
-For this project into your GitHub account, then clone your repository of this project:
+Fork this project into your GitHub account, then clone your repository of this project:
 
 ```
-cd /var
+cd /var/[PROJECT-DESTINATION]
 sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 ```
+
+**Note:** Each *web-application* requiring grunt, will need a clone of this repository.
 
 Then, add the *Remote Upstream*, this way we can pull any merged pull-requests:
 
@@ -103,7 +101,19 @@ After checking-out the most recent releases for each submodule (plug-in), we com
 - https://github.com/gruntjs/grunt-cli/releases
 - https://github.com/gruntjs/grunt-contrib-sass/releases
 - https://github.com/gruntjs/grunt-contrib-uglify/releases
+- https://github.com/gruntjs/grunt-contrib-watch/releases
 - https://github.com/Modernizr/grunt-modernizr/releases
+
+####Project Settings
+
+In order for *grunt* to perform, we need to define `package.json`.  This file contains the *project settings*, which tracks the development dependencies, and ultimately keeps environments synchronized:
+
+```
+cd /var/[CLONE-DESTINATION]/grunt
+npm init
+```
+
+**Note:** The *name*, and *version* field are required.  Values within paranthesis are default suggestions.
 
 ###Installation
 
@@ -111,7 +121,7 @@ We need to install each of the grunt submodules (plug-ins):
 
 ```
 cd /var/grunt/node_modules/[SUBMODULE]
-npm install --production
+npm install --save-dev
 ```
 
 We may need to rebuild our *Grunt* packages:
