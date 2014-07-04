@@ -110,7 +110,7 @@ We need to install each of the grunt submodules (plug-ins):
 
 ```
 cd /var/grunt/node_modules/[SUBMODULE]
-npm install --production
+npm install --save-dev
 ```
 
 We may need to rebuild our *Grunt* packages:
