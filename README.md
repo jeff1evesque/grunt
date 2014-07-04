@@ -148,3 +148,23 @@ The following are examples how to properly setup the automation process:
 # gruntfile.js: automate Uglify
 
 ```
+
+##Execution
+
+###Automate Grunt
+
+In order to automate *grunt*, we need to create a `gruntfile.js`.  This file should be saved in the same directory where `package.json` (refer to *Project Settings*, above) is found:
+
+```
+cd /var/[CLONE-DESTINATION]/grunt
+pico gruntfile.js
+```
+
+Once the `gruntfile.js` file has been defined, we need to open a terminal window, to dedicate the following command:
+
+```
+cd /var/[CLONE-DESTINATION/
+grunt
+```
+
+This will perform the grunt operations defined within `gruntfile.js`, and apply any *watches* defined.
