@@ -106,14 +106,14 @@ After checking-out the most recent releases for each submodule (plug-in), we com
 
 ####Project Settings
 
-In order for *grunt* to perform, it needs to define `package.json`.  This file contains the *project settings*, which tracks the development dependencies, and ultimately keeps environments synchronized:
+In order for *grunt* to perform, we need to define `package.json`.  This file contains the *project settings*, which tracks the development dependencies, and ultimately keeps environments synchronized:
 
 ```
 cd /var/[CLONED-DESTINATION/grunt
 npm init
 ```
 
-**Note:** At least fill the *name*, and *version*.  Values within paranthesis are default suggestions.
+**Note:** The *name*, and *version* field are required.  Values within paranthesis are default suggestions.
 
 ###Installation
 
