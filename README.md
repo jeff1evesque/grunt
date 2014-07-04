@@ -153,7 +153,7 @@ The following are examples how to properly setup the automation process:
 
 ###Automate Grunt
 
-In order to automate *grunt*, we need to create a `gruntfile.js`.  This file should be saved in the same directory where `package.json` (refer to *Project Settings*, above) is found:
+In order to automate *grunt*, we need to create a [`gruntfile.js`](https://gist.github.com/jeff1evesque/b98560d6c4d9914049f9).  This file should be saved in the same directory where `package.json` (refer to *Project Settings*, above) is found:
 
 ```
 cd /var/[CLONE-DESTINATION]/grunt
