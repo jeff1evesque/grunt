@@ -23,3 +23,4 @@
 [submodule "node_modules/grunt-contrib-watch"]
 	path = node_modules/grunt-contrib-watch
 	url = git://github.com/gruntjs/grunt-contrib-watch.git
+        ignore = dirty
