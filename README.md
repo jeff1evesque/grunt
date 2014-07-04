@@ -52,12 +52,14 @@ sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grun
 
 **Note:** Each *web-application* requiring grunt, will need a clone of this repository.
 
-Then, add the *Remote Upstream*, this way we can pull any merged pull-requests:
+Then, comment-out any instance of `ignore = dirty` within `.gitmodules`:
 
 ```
-cd /var/grunt
-git remote add upstream https://github.com/[YOUR-USERNAME]/[REPOSITORY-NAME].git
+cd /var/[CLONE-DESTINATION]/grunt
+pico .gitmodules
 ```
+
+This will allow us to write / download necessary components into each submodule with the respective attribute commented-out.
 
 #####GIT Submodule
 
@@ -123,6 +125,15 @@ We need to install each of the grunt submodules (plug-ins):
 cd /var/grunt/node_modules/[SUBMODULE]
 npm install --production
 ```
+
+Then, uncomment any instance of `ignore = dirty` within the `.gitmodules`:
+
+```
+cd /var/[CLONE-DESTINATION]/grunt
+pico .gitmodules
+```
+
+This will prevent us from committing anything within our *grunt* submodules (plug-ins).
 
 ##Execution
 
