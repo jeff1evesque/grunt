@@ -48,7 +48,7 @@ sudo rm -R node-v0.10.23
 For this project into your GitHub account, then clone your repository of this project:
 
 ```
-cd /var
+cd /var/[PROJECT-DESTINATION]
 sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 ```
 
