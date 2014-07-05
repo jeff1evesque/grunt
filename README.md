@@ -70,7 +70,7 @@ sudo git submodule init
 sudo git submodule update
 ```
 
-These commands will update submodules.  If we want to checkout the most recent release of specific submodules, this should be committed within this repository.
+These commands will update submodules.  Checking out the most recent release for submodules should be committed to this repository (not in the Clone):
 
 ```
 cd /var/grunt/node_modules/grunt
@@ -79,7 +79,7 @@ cd ..
 git status
 ```
 
-After checking-out the most recent release for each submodule, commit, and merge the changes.
+After checking-out a release for a submodule, commit, and merge the changes.
 
 **Note:** clones of this repository will have the same submodule references in the `.gitmodules` file.
 
