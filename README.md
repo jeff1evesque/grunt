@@ -70,23 +70,7 @@ sudo git submodule init
 sudo git submodule update
 ```
 
-The above two commands will update submodules.  If they are already initialized, then the latter command will suffice.  Then, we need to pull the code-base into the initialized submodule directory:
-
-```
-cd /var/[CLONE-DESTINATION]/grunt
-git checkout -b NEW-BRANCH master
-cd [YOUR-SUBMODULE]
-git checkout master
-git pull
-cd ..
-git status
-```
-
-Now, commit and merge the submodule changes.
-
-####Grunt Submodules
-
-Before proceeding to the the *Installation* subsection, we need to ensure that each *Grunt* submodule (plug-in) is referring to the most recent release version:
+The above two commands will update submodules.  If they are already initialized, then the latter command will suffice.  Then, we need to pull the code-base into the initialized submodule directory.  This will be done by checking out the most recent versions for each *Grunt* submodule (plug-in):
 
 ```
 cd /var/grunt/node_modules/grunt
@@ -95,7 +79,7 @@ cd ..
 git status
 ```
 
-After checking-out the most recent releases for each submodule (plug-in), we commit, and merge the changes.
+After checking-out the most recent release for each submodule, commit, and merge the changes.
 
 **Note:** the most recent release for each *grunt* submodule (plug-in):
 
