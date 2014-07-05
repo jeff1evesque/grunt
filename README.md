@@ -31,10 +31,10 @@ sudo apt-get install rubygems1.8
 sudo apt-get install libhaml-ruby1.8
 sudo gem install sass
 
-# node.js, 10.28 - Ubuntu 14.04
+# node.js, v0.10.28 - Ubuntu 14.04
 sudo apt-get install nodejs
 
-# node.js, 10.23 - Ubuntu 13.04-
+# node.js, v0.10.23 - Ubuntu 13.04-
 sudo wget http://node.js.org/dist/v0.10.23/node-v0.10.23.tar.gz -O - | tar -xz
 cd node-v0.10.23
 ./configure
@@ -43,7 +43,7 @@ cd ..
 sudo rm -R node-v0.10.23
 ```
 
-**Note:** We are running [Grunt v0.4x](http://gruntjs.com/getting-started), which requires stable Node.js [versions](http://nodejs.org/dist/) >= 0.8.0.
+**Note:** We are running [Grunt v0.4x](http://gruntjs.com/getting-started), which requires stable Node.js [versions](http://nodejs.org/dist/) >= v0.8.0.
 
 ###Configuration
 
