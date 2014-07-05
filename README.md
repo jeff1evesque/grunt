@@ -53,15 +53,6 @@ git submodule https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 
 **Note:** Each *web-application* requiring grunt, will need a clone of this repository.
 
-Then, comment-out any instance of `ignore = dirty` within `.gitmodules`:
-
-```
-cd /var/[CLONE-DESTINATION]/grunt
-pico .gitmodules
-```
-
-This will allow us to write / download necessary components into each respective submodule.
-
 #####GIT Submodule
 
 We need to initialize our git *submodules*:
@@ -108,15 +99,6 @@ We need to install each of the grunt submodules (plug-ins):
 cd /var/[CLONE-DESTINATION]/grunt/node_modules/[SUBMODULE]
 npm install --production
 ```
-
-Then, uncomment any instance of `ignore = dirty` within the `.gitmodules`:
-
-```
-cd /var/[CLONE-DESTINATION]/grunt
-pico .gitmodules
-```
-
-This will prevent us from committing anything within our *grunt* submodules (plug-ins).
 
 ##Execution
 
