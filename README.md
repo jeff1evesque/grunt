@@ -1,7 +1,7 @@
 Grunt
 =====
 
-This repository contains the required submodules (plug-ins) to automate [grunt v0.4.5](http://gruntjs.com) tools such as [Sass](https://github.com/gruntjs/grunt-contrib-sass), [Uglify](https://github.com/gruntjs/grunt-contrib-uglify), [Modernizr](https://github.com/Modernizr/grunt-modernizr) using the command line interface (terminal console).  Additional tools (plug-ins) can be automated.  However, check the list of [available plugins](http://gruntjs.com/plugins) within the *Grunt Ecosystem*.
+This repository contains the required submodules (plug-ins) to automate [grunt v0.4.5](http://gruntjs.com) tools such as [Sass](https://sass-lang.com), [Uglify](https://npmjs.org/package/uglify-js), [Modernizr](https://modernizr.com), [Imagemin](https://npmjs.org/package/imagemin) using the command line interface (terminal console).  Additional tools (plug-ins) can be automated.  However, check the list of [available plugins](http://gruntjs.com/plugins) within the *Grunt Ecosystem*.
 
 ##Grunt
 
@@ -11,9 +11,10 @@ This repository contains the required submodules (plug-ins) to automate [grunt v
 
 Grunt works by adapting plugins, and automating them.  Some of the more notable plug-ins included in the *Grunt Ecosystem*:
 
-- Sass (compiled css)
-- Uglify (minify js)
-- Modernizr (conditional js / css)
+- [Sass](https://github.com/gruntjs/grunt-contrib-sass) (compile css)
+- [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) (minify js)
+- [Modernizr](https://github.com/Modernizr/grunt-modernizr) (conditional js / css)
+- [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) (minify images)
 
 ## Requirement
 
