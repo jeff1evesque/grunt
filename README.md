@@ -63,7 +63,7 @@ This will allow us to write / download necessary components into each respective
 
 #####GIT Submodule
 
-We need to initialize our git *submodules*:
+We need to initialize our git *submodules*.  The following two commands need to be run in two locations - the directory we are cloning this repository into, as well as within the *grunt* clone directory:
 
 ```
 sudo git submodule init
@@ -78,6 +78,8 @@ git checkout [RELEASE_TAG]
 cd ..
 git status
 ```
+
+**Note:** checking-out specific releases should be handled within this repository, not within repositories cloning this project.
 
 After checking-out the most recent release for each submodule, commit, and merge the changes.
 
