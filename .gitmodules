@@ -27,3 +27,4 @@
 [submodule "node_modules/grunt-contrib-imagemin"]
 	path = node_modules/grunt-contrib-imagemin
 	url = git://github.com/gruntjs/grunt-contrib-imagemin
+        ignore = dirty
