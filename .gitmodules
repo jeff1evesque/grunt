@@ -10,3 +10,6 @@
 [submodule "node_modules/grunt-contrib-sass"]
 	path = node_modules/grunt-contrib-sass
 	url = git://github.com/gruntjs/grunt-contrib-sass.git
+[submodule "node_modules/grunt-modernizr"]
+	path = node_modules/grunt-modernizr
+	url = git://github.com/Modernizr/grunt-modernizr.git
