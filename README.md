@@ -63,9 +63,14 @@ This will allow us to write / download necessary components into each respective
 
 #####GIT Submodule
 
-We need to initialize our git *submodules*.  Run the following within the directory we are cloning this repository into, and within `/var/[CLONE-DESTINATION/grunt`:
+We need to initialize our git *submodules*:
 
 ```
+cd /var/[CLONE-DESTINATION]
+sudo git submodule init
+sudo git submodule update
+
+cd /var/[CLONE-DESTINATION]/grunt
 sudo git submodule init
 sudo git submodule update
 ```
