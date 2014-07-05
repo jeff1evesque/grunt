@@ -41,7 +41,6 @@ cd node-v0.10.23
 sudo make install
 cd ..
 sudo rm -R node-v0.10.23
-
 ```
 
 ###Configuration
