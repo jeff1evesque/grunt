@@ -47,7 +47,7 @@ Fork this project into your GitHub account, then clone your repository of this p
 
 ```
 cd /var/[PROJECT-DESTINATION]
-sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
+git submodule https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 ```
 
 **Note:** Each *web-application* requiring grunt, will need a clone of this repository.
@@ -73,7 +73,7 @@ sudo git submodule update
 The above two commands will update submodules.  If they are already initialized, then the latter command will suffice.  Then, we need to pull the code-base into the initialized submodule directory:
 
 ```
-cd /var/grunt
+cd /var/[CLONE-DESTINATION]/grunt
 git checkout -b NEW-BRANCH master
 cd [YOUR-SUBMODULE]
 git checkout master
