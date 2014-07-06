@@ -109,7 +109,7 @@ After checking-out the most recent releases for each submodule (plug-in), we com
 In order for *grunt* to perform, we need to define `package.json`.  This file contains the *project settings*, which tracks the development dependencies, and ultimately keeps environments synchronized:
 
 ```
-cd /var/[CLONED-DESTINATION/grunt
+cd /var/[CLONE-DESTINATION]/grunt
 npm init
 ```
 
