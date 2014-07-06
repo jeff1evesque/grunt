@@ -19,6 +19,8 @@ Grunt works by adapting plugins, and automating them.  Some of the more notable 
 
 ###Pre-Installation
 
+####Packages
+
 The following packages need to be installed through terminal in Ubuntu:
 
 ```
@@ -38,10 +40,6 @@ sudo make install
 cd ..
 sudo rm -R node-v0.10.23
 ```
-
-**Note:** We are running [Grunt v0.4x](http://gruntjs.com/getting-started), which requires stable Node.js [versions](http://nodejs.org/dist/) >= v0.8.0.
-
-###Configuration
 
 ####GIT
 
@@ -132,3 +130,41 @@ We may need to rebuild our *Grunt* packages:
 cd /var/grunt
 npm rebuild
 ```
+
+###Configuration
+
+Grunt is only installed once within a given system, or web-server (depending on setup).  Each web-application within the given system (or server) requiring any aspect of *grunt* automation, will need its own `gruntfile.js`.  If this file is properly configured, *grunt* automation will happen naturally.
+
+####Grunt File
+
+The following are examples how to properly setup the automation process:
+
+```
+# gruntfile.js: automate Sass
+
+```
+
+```
+# gruntfile.js: automate Uglify
+
+```
+
+##Execution
+
+###Automate Grunt
+
+In order to automate *grunt*, we need to create a [`gruntfile.js`](https://gist.github.com/jeff1evesque/b98560d6c4d9914049f9).  This file should be saved in the same directory where `package.json` (refer to *Project Settings*, above) is found:
+
+```
+cd /var/[CLONE-DESTINATION]/grunt
+pico gruntfile.js
+```
+
+Once the [`gruntfile.js`](https://gist.github.com/jeff1evesque/b98560d6c4d9914049f9) file has been saved, open a terminal window to dedicate the following command:
+
+```
+cd /var/[CLONE-DESTINATION]
+grunt
+```
+
+This will perform the grunt operations defined within `gruntfile.js`, and apply any *watches* defined.
