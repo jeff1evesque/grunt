@@ -1,21 +1,19 @@
 Grunt
 =====
 
-This repository contains the correct submodules (plug-ins) to automate tools such as *Sass*, *Uglify*, *Modernizr* using the command line interface (terminal console) for Grunt v0.4.x.  Additional tools (plug-ins) can be automated.  However, check the list of available plugins within the *Grunt Ecosystem*.
+This repository contains the required submodules (plug-ins) to automate [grunt v0.4.5](http://gruntjs.com) tools such as [Sass](https://github.com/gruntjs/grunt-contrib-sass), [Uglify](https://github.com/gruntjs/grunt-contrib-uglify), [Modernizr](https://github.com/Modernizr/grunt-modernizr) using the command line interface (terminal console).  Additional tools (plug-ins) can be automated.  However, check the list of [available plugins](http://gruntjs.com/plugins) within the *Grunt Ecosystem*.
 
 ##Grunt
 
 ###Definition
 
-*Grunt* is an *automation tool* which assists in various repetitive tasks such as minification, compilation, unit testing, linting, etc.
+[*Grunt*](http://gruntjs.com) is an *automation tool* which assists in various repetitive tasks such as minification, compilation, unit testing, linting, etc.  Web-applications employing grunt is generally considered as a *testing*, or *staging* environment.  The compiled assets from this environment is typically pushed onto a *staging*, or *production* environments.
 
 Grunt works by adapting plugins, and automating them.  Some of the more notable plug-ins included in the *Grunt Ecosystem*:
 
 - Sass (compiled css)
 - Uglify (minify js)
 - Modernizr (conditional js / css)
-
-For a complete list of available plugins to the *Grunt* ecosystem:
 
 - http://gruntjs.com/plugins
 
