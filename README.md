@@ -45,12 +45,14 @@ sudo rm -R node-v0.10.23
 
 ####GIT
 
-For this project into your GitHub account, then clone your repository of this project:
+Fork this project into your GitHub account, then clone your repository of this project:
 
 ```
-cd /var
+cd /var/[PROJECT-DESTINATION]
 sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 ```
+
+**Note:** Each *web-application* requiring grunt, will need a clone of this repository.
 
 Then, add the *Remote Upstream*, this way we can pull any merged pull-requests:
 
