@@ -131,24 +131,6 @@ cd /var/grunt
 npm rebuild
 ```
 
-###Configuration
-
-Grunt is only installed once within a given system, or web-server (depending on setup).  Each web-application within the given system (or server) requiring any aspect of *grunt* automation, will need its own `gruntfile.js`.  If this file is properly configured, *grunt* automation will happen naturally.
-
-####Grunt File
-
-The following are examples how to properly setup the automation process:
-
-```
-# gruntfile.js: automate Sass
-
-```
-
-```
-# gruntfile.js: automate Uglify
-
-```
-
 ##Execution
 
 ###Automate Grunt
