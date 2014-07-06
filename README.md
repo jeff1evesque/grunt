@@ -102,7 +102,7 @@ cd /var/[CLONE-DESTINATION]/grunt/node_modules/[SUBMODULE]
 npm install --production
 ```
 
-Then, install *grunt-cli* again.  But, this time for all grunt projects:
+Then, install *grunt-cli* for all grunt projects:
 
 ```
 sudo npm install -g grunt-cli
