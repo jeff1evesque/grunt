@@ -15,8 +15,6 @@ Grunt works by adapting plugins, and automating them.  Some of the more notable 
 - Uglify (minify js)
 - Modernizr (conditional js / css)
 
-- http://gruntjs.com/plugins
-
 ## Requirement
 
 ###Pre-Installation
