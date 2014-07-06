@@ -105,6 +105,7 @@ After checking-out the most recent releases for each submodule (plug-in), we com
 - https://github.com/gruntjs/grunt-cli/releases
 - https://github.com/gruntjs/grunt-contrib-sass/releases
 - https://github.com/gruntjs/grunt-contrib-uglify/releases
+- https://github.com/gruntjs/grunt-contrib-watch/releases
 - https://github.com/Modernizr/grunt-modernizr/releases
 
 ###Installation
