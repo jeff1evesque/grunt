@@ -78,7 +78,7 @@ sudo git submodule update
 These commands will update submodules.  Checking out the most recent release for submodules should be committed to this repository (not in the Clone):
 
 ```
-cd /var/[CLONE-DESTINATION]/grunt/node_modules/grunt
+cd /var/[CLONE-DESTINATION]/grunt/node_modules/[SUBMODULE]
 git checkout [RELEASE_TAG]
 cd ..
 git status
