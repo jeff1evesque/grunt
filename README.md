@@ -63,14 +63,14 @@ This will allow us to write / download necessary components into each respective
 
 #####GIT Submodule
 
-We need to initialize our git *submodules*:
+We need to initialize our git *submodules*.  Run the following within the directory we are cloning this repository into, and within `/var/[CLONE-DESTINATION/grunt`:
 
 ```
 sudo git submodule init
 sudo git submodule update
 ```
 
-The above two commands will update submodules.  If they are already initialized, then the latter command will suffice.  Then, we need to pull the code-base into the initialized submodule directory.  This will be done by checking out the most recent versions for each *Grunt* submodule (plug-in):
+These commands will update submodules.  Checking out the most recent release for submodules should be committed to this repository (not in the Clone):
 
 ```
 cd /var/grunt/node_modules/grunt
@@ -79,16 +79,9 @@ cd ..
 git status
 ```
 
-After checking-out the most recent release for each submodule, commit, and merge the changes.
+After checking-out a release for a submodule, commit, and merge the changes.
 
-**Note:** the most recent release for each *grunt* submodule (plug-in):
-
-- https://github.com/gruntjs/grunt/releases
-- https://github.com/gruntjs/grunt-cli/releases
-- https://github.com/gruntjs/grunt-contrib-sass/releases
-- https://github.com/gruntjs/grunt-contrib-uglify/releases
-- https://github.com/gruntjs/grunt-contrib-watch/releases
-- https://github.com/Modernizr/grunt-modernizr/releases
+**Note:** clones of this repository will have the same submodule references in the `.gitmodules` file.
 
 ####Project Settings
 
