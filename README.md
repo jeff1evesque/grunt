@@ -46,7 +46,7 @@ sudo rm -R node-v0.10.23
 Fork this project into your GitHub account, then clone your repository of this project:
 
 ```
-cd /var/[PROJECT-DESTINATION]
+cd /var/[CLONE-DESTINATION]
 git submodule https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 ```
 
@@ -78,7 +78,7 @@ sudo git submodule update
 These commands will update submodules.  Checking out the most recent release for submodules should be committed to this repository (not in the Clone):
 
 ```
-cd /var/grunt/node_modules/grunt
+cd /var/[CLONE-DESTINATION]/grunt/node_modules/grunt
 git checkout [RELEASE_TAG]
 cd ..
 git status
@@ -104,7 +104,7 @@ npm init
 We need to install each of the grunt submodules (plug-ins):
 
 ```
-cd /var/grunt/node_modules/[SUBMODULE]
+cd /var/[CLONE-DESTINATION]/grunt/node_modules/[SUBMODULE]
 npm install --production
 ```
 
