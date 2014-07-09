@@ -24,3 +24,7 @@
 	path = node_modules/grunt-contrib-watch
 	url = git://github.com/gruntjs/grunt-contrib-watch.git
         ignore = dirty
+[submodule "node_modules/grunt-contrib-imagemin"]
+	path = node_modules/grunt-contrib-imagemin
+	url = git://github.com/gruntjs/grunt-contrib-imagemin
+        ignore = dirty
