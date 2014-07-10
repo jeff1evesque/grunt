@@ -76,7 +76,9 @@ cd ..
 git status
 ```
 
-After checking-out a release for a submodule, commit, and merge the changes.
+After checking-out a release for a submodule, commit, and merge the changes.  
+
+**Note:** Grunt, and Grunt plugins are installed and managed via npm, the Node.js packaged manager.  Therefore, all [grunt submodules](https://github.com/gruntjs) (plug-ins) belong within the `node_modules` directory, since Node.js requires this structure for submodule references being used with code.
 
 **Note:** clones of this repository will have the same submodule references in the `.gitmodules` file.
 
