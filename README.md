@@ -95,12 +95,20 @@ npm init
 
 ###Installation
 
-We need to install each of the grunt submodules (plug-ins):
+We need to install each grunt submodules (plug-ins):
 
 ```
 cd /var/[CLONE-DESTINATION]/grunt/node_modules/[SUBMODULE]
 npm install --production
 ```
+
+Then, install *grunt-cli* for all grunt projects:
+
+```
+sudo npm install -g grunt-cli
+```
+
+**Note:** this command can be run from any directory.
 
 ##Execution
 
