@@ -118,4 +118,4 @@ cd /var/[CLONE-DESTINATION]
 grunt
 ```
 
-This will perform the grunt operations defined within `gruntfile.js`, and apply any *watches* defined.
+This will perform the grunt operations defined within [`gruntfile.js`](https://gist.github.com/jeff1evesque/b98560d6c4d9914049f9), and apply any *watches* defined.
