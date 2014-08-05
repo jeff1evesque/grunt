@@ -48,7 +48,14 @@ Fork this project into your GitHub account, then clone your repository of this p
 
 ```
 cd /var/[CLONE-DESTINATION]
-git submodule https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
+sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
+```
+
+Then, add the Remote Upstream, this way we can pull any merged pull-requests:
+
+```
+cd /var/www/grunt/
+git remote add upstream https://github.com/[YOUR-USERNAME]/grunt.git
 ```
 
 **Note:** Each *web-application* requiring grunt, will need a clone of this repository.
