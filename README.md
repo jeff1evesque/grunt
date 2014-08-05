@@ -3,8 +3,6 @@ Grunt
 
 This repository contains the required submodules (plug-ins) to automate [grunt v0.4.5](http://gruntjs.com) tools such as [Sass](https://sass-lang.com), [Uglify](https://npmjs.org/package/uglify-js), [Modernizr](https://modernizr.com), [Imagemin](https://npmjs.org/package/imagemin) using the command line interface (terminal console).  Additional tools (plug-ins) can be automated.  However, check the list of [available plugins](http://gruntjs.com/plugins) within the *Grunt Ecosystem*.
 
-##Grunt
-
 ###Definition
 
 [*Grunt*](http://gruntjs.com) is an *automation tool* which assists in various repetitive tasks such as minification, compilation, unit testing, linting, etc.  Web-applications employing grunt is generally considered as a *testing*, or *staging* environment.  The compiled assets from this environment is typically pushed onto a *staging*, or *production* environments.
@@ -16,11 +14,9 @@ Grunt works by adapting plugins, and automating them.  Some of the more notable 
 - [Modernizr](https://github.com/Modernizr/grunt-modernizr) (conditional js / css)
 - [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) (minify images)
 
-## Requirement
+##Pre-Installation
 
-###Pre-Installation
-
-####Packages
+###Packages
 
 The following packages need to be installed through terminal in Ubuntu:
 
@@ -42,7 +38,7 @@ cd ..
 sudo rm -R node-v0.10.23
 ```
 
-####GIT
+###GIT
 
 Fork this project into your GitHub account, then clone your repository of this project:
 
@@ -60,7 +56,7 @@ git remote add upstream https://github.com/[YOUR-USERNAME]/grunt.git
 
 **Note:** Each *web-application* requiring grunt, will need a clone of this repository.
 
-#####GIT Submodule
+####GIT Submodule
 
 We need to initialize our git *submodules*:
 
@@ -89,7 +85,7 @@ After checking-out a release for a submodule, commit, and merge the changes.
 
 **Note:** clones of this repository will have the same submodule references in the `.gitmodules` file.
 
-####Project Settings
+###Project Settings
 
 In order for *grunt* to perform, we need to define `package.json`.  This file contains the *project settings*, which tracks the development dependencies, and ultimately keeps environments synchronized:
 
@@ -100,7 +96,7 @@ npm init
 
 **Note:** The *name*, and *version* field are required.  Values within paranthesis are default suggestions.
 
-###Installation
+##Installation
 
 We need to install each grunt submodules (plug-ins):
 
