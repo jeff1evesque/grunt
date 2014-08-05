@@ -38,14 +38,14 @@ sudo ln -s "$(which nodejs)" /usr/bin/node
 Fork this project into your GitHub account, then clone your repository of this project:
 
 ```
-cd /var/[CLONE-DESTINATION]/
+cd /var/www/html/[CLONE-DESTINATION]/
 sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grunt
 ```
 
 Then, add the Remote Upstream, this way we can pull any merged pull-requests:
 
 ```
-cd /var/www/[CLONE-DESTINATION]/grunt/
+cd /var/www/html/[CLONE-DESTINATION]/grunt/
 git remote add upstream https://github.com/[YOUR-USERNAME]/grunt.git
 ```
 
@@ -56,11 +56,11 @@ git remote add upstream https://github.com/[YOUR-USERNAME]/grunt.git
 We need to initialize our git *submodules*:
 
 ```
-cd /var/[CLONE-DESTINATION]/
+cd /var/www/html/[CLONE-DESTINATION]/
 sudo git submodule init
 sudo git submodule update
 
-cd /var/[CLONE-DESTINATION]/grunt/
+cd /var/www/html/[CLONE-DESTINATION]/grunt/
 sudo git submodule init
 sudo git submodule update
 ```
@@ -85,7 +85,7 @@ After checking-out a release for a submodule, commit, and merge the changes.
 In order for *grunt* to perform, we need to define `package.json`.  This file contains the *project settings*, which tracks the development dependencies, and ultimately keeps environments synchronized:
 
 ```
-cd /var/[CLONE-DESTINATION]/grunt/
+cd /var/www/html/[CLONE-DESTINATION]/grunt/
 npm init
 ```
 
@@ -96,7 +96,7 @@ npm init
 We need to install each grunt submodules (plug-ins):
 
 ```
-cd /var/[CLONE-DESTINATION]/grunt/node_modules/[SUBMODULE]/
+cd /var/www/html/[CLONE-DESTINATION]/grunt/node_modules/[SUBMODULE]/
 npm install --production
 ```
 
@@ -115,14 +115,14 @@ sudo npm install -g grunt-cli
 In order to automate *grunt*, we need to create a [`gruntfile.js`](https://gist.github.com/jeff1evesque/b98560d6c4d9914049f9).  This file should be saved in the same directory where `package.json` (refer to *Project Settings*, above) is found:
 
 ```
-cd /var/[CLONE-DESTINATION]/grunt/
+cd /var/www/html/[CLONE-DESTINATION]/grunt/
 pico gruntfile.js
 ```
 
 Once the [`gruntfile.js`](https://gist.github.com/jeff1evesque/b98560d6c4d9914049f9) file has been saved, open a terminal window to dedicate the following command:
 
 ```
-cd /var/[CLONE-DESTINATION]/grunt/
+cd /var/www/html/[CLONE-DESTINATION]/grunt/
 grunt
 ```
 
