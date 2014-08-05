@@ -45,7 +45,7 @@ sudo git clone https://[YOUR-USERNAME]@github.com/[YOUR-USERNAME]/grunt.git grun
 Then, add the Remote Upstream, this way we can pull any merged pull-requests:
 
 ```
-cd /var/www/grunt/
+cd /var/www/[CLONE-DESTINATION]/grunt/
 git remote add upstream https://github.com/[YOUR-USERNAME]/grunt.git
 ```
 
