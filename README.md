@@ -21,22 +21,17 @@ Grunt works by adapting plugins, and automating them.  Some of the more notable 
 The following packages need to be installed through terminal in Ubuntu:
 
 ```
-# Sass (ruby)
-sudo apt-get install rubygems1.8
-sudo apt-get install libhaml-ruby1.8
+# General Packages:
+sudo apt-get install ruby
+sudo apt-get install npm
+sudo apt-get install nodejs
 sudo gem install sass
 
-# node.js, v0.10.28 - Ubuntu 14.04
-sudo apt-get install nodejs
-
-# node.js, v0.10.23 - Ubuntu 13.04-
-sudo wget http://node.js.org/dist/v0.10.23/node-v0.10.23.tar.gz -O - | tar -xz
-cd node-v0.10.23/
-./configure
-sudo make install
-cd ../
-sudo rm -R node-v0.10.23
+# Package Configuration: create a link to (/usr/bin/node) that points to "nodejs"
+sudo ln -s "$(which nodejs)" /usr/bin/node
 ```
+
+**Note:** This project assumes [Ubuntu Server 14.04](http://www.ubuntu.com/download/server) as the operating system.
 
 ###GIT
 
