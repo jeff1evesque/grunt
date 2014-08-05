@@ -122,7 +122,7 @@ pico gruntfile.js
 Once the [`gruntfile.js`](https://gist.github.com/jeff1evesque/b98560d6c4d9914049f9) file has been saved, open a terminal window to dedicate the following command:
 
 ```
-cd /var/[CLONE-DESTINATION]/
+cd /var/[CLONE-DESTINATION]/grunt/
 grunt
 ```
 
