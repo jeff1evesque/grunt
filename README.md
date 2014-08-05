@@ -16,7 +16,7 @@ Grunt works by adapting plugins, and automating them.  Some of the more notable 
 
 ##Pre-Installation
 
-###Packages
+###Linux Packages
 
 The following packages need to be installed through terminal in Ubuntu:
 
